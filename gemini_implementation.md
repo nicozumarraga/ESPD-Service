@@ -71,7 +71,9 @@ The first and most critical step is to adapt the Java service.
 3.  **Expose Core Logic via REST Endpoints:**
     *   `POST /api/import`: This endpoint will accept a `multipart/form-data` file upload. It will use the existing `EspdXmlImporter` to parse the file and will return a JSON representation of the `EspdDocument` object.
     *   `POST /api/export`: This endpoint will accept a JSON representation of the `EspdDocument` in its request body. It will use the existing `EspdXmlExporter` to generate the final XML and return it as an `application/xml` file.
-4.  **Containerize the Service:** Create a `Dockerfile` to build and run the Java application as a self-contained service. This will simplify deployment and ensure consistency across environments.
+4.  **JAXB Configuration:** The JAXB configuration is defined in the `JaxbConfiguration.java` file. It is crucial to preserve this configuration in the headless microservice to ensure that the XML is correctly marshalled and unmarshalled. The `Jaxb2Marshaller` is configured to scan the packages containing the `ESPDRequestType` and `ESPDResponseType` classes, so it is important to preserve the package structure of these classes.
+
+5.  **Containerize the Service:** Create a `Dockerfile` to build and run the Java application as a self-contained service. This will simplify deployment and ensure consistency across environments.
 
     ```dockerfile
     # Use an appropriate base image with Java 8 and Maven
