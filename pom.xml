@@ -82,7 +82,7 @@
     </parent>
 
     <properties>
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
         <main.basedir>${basedir}/../..</main.basedir>
         <start-class>eu.europa.ec.grow.espd.config.EspdApplication</start-class>
         <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
