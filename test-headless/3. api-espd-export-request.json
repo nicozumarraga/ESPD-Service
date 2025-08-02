@@ -244,7 +244,7 @@
     "exists": true,
     "answer": false,
     "selfCleaning": {
-      "answer": null,
+      "answer": false,
       "description": null
     },
     "description": null,
@@ -258,12 +258,12 @@
       }
     ],
     "selfCleaningDescription": null,
-    "selfCleaningAnswer": null,
+    "selfCleaningAnswer": false,
     "dateOfConviction": null,
     "convicted": null,
     "periodLength": null,
     "reason": null,
-    "infoElectronicallyAnswer": null,
+    "infoElectronicallyAnswer": false,
     "infoElectronicallyUrl": null,
     "infoElectronicallyCode": null,
     "infoElectronicallyIssuer": null

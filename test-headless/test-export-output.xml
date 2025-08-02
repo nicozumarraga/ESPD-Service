@@ -2,7 +2,7 @@
 <espd:ESPDResponse xmlns:espd-cbc="urn:grow:names:specification:ubl:schema:xsd:ESPD-CommonBasicComponents-1" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cev="urn:isa:names:specification:ubl:schema:xsd:CEV-CommonAggregateComponents-1" xmlns:espd-cac="urn:grow:names:specification:ubl:schema:xsd:ESPD-CommonAggregateComponents-1" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cev-cbc="urn:isa:names:specification:ubl:schema:xsd:CEV-CommonBasicComponents-1" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:espd="urn:grow:names:specification:ubl:schema:xsd:ESPDResponse-1" xmlns:espd-req="urn:grow:names:specification:ubl:schema:xsd:ESPDRequest-1" xmlns:ccv="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1" xmlns:ccv-cbc="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">
     <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.1</cbc:UBLVersionID>
     <cbc:CustomizationID schemeName="CustomizationID" schemeAgencyID="BII" schemeVersionID="3.0">urn:www.cenbii.eu:transaction:biitrns092:ver3.0</cbc:CustomizationID>
-    <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeAgencyName="DG GROW (European Commission)" schemeVersionID="1.1">ee07da42-1348-4a5e-ab23-663acc9323a8</cbc:ID>
+    <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeAgencyName="DG GROW (European Commission)" schemeVersionID="1.1">30a4cb6a-02a6-451a-ba5d-6f5db730f0c6</cbc:ID>
     <cbc:CopyIndicator>false</cbc:CopyIndicator>
     <cbc:VersionID schemeAgencyID="EU-COM-GROW">1.0.2</cbc:VersionID>
     <cbc:IssueDate>2025-08-08</cbc:IssueDate>
@@ -42,7 +42,7 @@
                             <cbc:CityName>Ciudad:</cbc:CityName>
                             <cbc:PostalZone>Código postal:</cbc:PostalZone>
                             <cac:Country>
-<cbc:IdentificationCode listID="CountryCodeIdentifier" listAgencyID="EU-COM-GROW" listName="CountryCodeIdentifier" listVersionID="1.0.2">ES</cbc:IdentificationCode>
+                                <cbc:IdentificationCode listID="CountryCodeIdentifier" listAgencyID="EU-COM-GROW" listName="CountryCodeIdentifier" listVersionID="1.0.2">ES</cbc:IdentificationCode>
                             </cac:Country>
                         </cac:ResidenceAddress>
                     </cac:Person>
@@ -146,7 +146,7 @@
                             <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7b07904f-e080-401a-a3a1-9a3efeeda54b</cbc:ID>
                             <cbc:Description>Please describe them</cbc:Description>
                             <ccv:Response>
-<cbc:Description>Descríbalas</cbc:Description>
+                                <cbc:Description>Descríbalas</cbc:Description>
                             </ccv:Response>
                         </ccv:Requirement>
                     </ccv:RequirementGroup>
@@ -170,12 +170,12 @@
                     <ccv:Response>
                         <cev:Evidence>
                             <cev:EvidenceDocumentReference>
-<cbc:ID schemeAgencyID="EU-COM-GROW">b6b59d09-ae8a-434e-bacf-abcad936aa76</cbc:ID>
-<cac:Attachment>
-    <cac:ExternalReference>
-        <cbc:URI>https://ejemplo.com</cbc:URI>
-    </cac:ExternalReference>
-</cac:Attachment>
+                                <cbc:ID schemeAgencyID="EU-COM-GROW">58fd17e9-3a1e-4637-b605-b4f13baa7e44</cbc:ID>
+                                <cac:Attachment>
+                                    <cac:ExternalReference>
+                                        <cbc:URI>https://ejemplo.com</cbc:URI>
+                                    </cac:ExternalReference>
+                                </cac:Attachment>
                             </cev:EvidenceDocumentReference>
                         </cev:Evidence>
                     </ccv:Response>
@@ -709,7 +709,7 @@
                             <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">201f11c3-1fa2-4464-acc0-f021266fd881</cbc:ID>
                             <cbc:Description>Please describe which means were used</cbc:Description>
                             <ccv:Response>
-<cbc:Description>Describa los medios que se han utilizado</cbc:Description>
+                                <cbc:Description>Describa los medios que se han utilizado</cbc:Description>
                             </ccv:Response>
                         </ccv:Requirement>
                     </ccv:RequirementGroup>
@@ -752,7 +752,7 @@
                             <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">55905dd0-38f0-4f93-8c74-5ae05a21afc5</cbc:ID>
                             <cbc:Description>Please describe them</cbc:Description>
                             <ccv:Response>
-<cbc:Description>Descríbalas</cbc:Description>
+                                <cbc:Description>Descríbalas</cbc:Description>
                             </ccv:Response>
                         </ccv:Requirement>
                     </ccv:RequirementGroup>
@@ -956,7 +956,7 @@
                             <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7b07904f-e080-401a-a3a1-9a3efeeda54b</cbc:ID>
                             <cbc:Description>Please describe them</cbc:Description>
                             <ccv:Response>
-<cbc:Description>Descríbalas</cbc:Description>
+                                <cbc:Description>Descríbalas</cbc:Description>
                             </ccv:Response>
                         </ccv:Requirement>
                     </ccv:RequirementGroup>
@@ -1849,7 +1849,7 @@
                             <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">d9996ef5-49f9-4cf8-a2f5-31c9f4efd894</cbc:ID>
                             <cbc:Description>d) Does the registration or certification cover all of the required selection criteria?</cbc:Description>
                             <ccv:Response>
-<ccv-cbc:Indicator>true</ccv-cbc:Indicator>
+                                <ccv-cbc:Indicator>true</ccv-cbc:Indicator>
                             </ccv:Response>
                         </ccv:Requirement>
                     </ccv:RequirementGroup>
@@ -2007,7 +2007,7 @@
         </ccv:RequirementGroup>
     </ccv:Criterion>
     <cac:Signature>
-        <cbc:ID schemeAgencyID="EU-COM-GROW">67d92be0-ecaf-4ae4-b69e-60cec4f7bbb0</cbc:ID>
+        <cbc:ID schemeAgencyID="EU-COM-GROW">8f1af834-aa67-4f46-a768-1d37088f59ed</cbc:ID>
         <cac:SignatoryParty>
             <cac:PhysicalLocation>
                 <cbc:Name>Lugar</cbc:Name>

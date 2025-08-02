@@ -168,3 +168,6 @@ local.properties
 .recommenders/
 
 espd-web/build/
+
+# Mac DS files
+.DS_Store
