@@ -24,6 +24,7 @@
 
 package eu.europa.ec.grow.espd.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import eu.europa.ec.grow.espd.domain.enums.criteria.ExclusionCriterion;
 import eu.europa.ec.grow.espd.domain.enums.criteria.SelectionCriterion;
 import eu.europa.ec.grow.espd.domain.ubl.CcvCriterion;
@@ -149,6 +150,7 @@ public class EspdDocument {
 
     private List<CriterionType> ublCriteria;
 
+    @JsonIgnore
     public final boolean getAtLeastOneSelectionCriterionWasSelected() {
         for (SelectionCriterion ccvCriterion : SelectionCriterion.ALL_VALUES) {
             EspdCriterion espdCriterion = readCriterionFromEspd(ccvCriterion);
@@ -159,6 +161,7 @@ public class EspdDocument {
         return false;
     }
 
+    @JsonIgnore
     public final boolean getAllSelectionCriterionWasSelectedExceptAlpha() {
         for (SelectionCriterion ccvCriterion : SelectionCriterion.ALL_VALUES) {
             if (!SelectionCriterion.ALL_SELECTION_CRITERIA_SATISFIED.getUuid().equals(ccvCriterion.getUuid())) {
@@ -225,6 +228,7 @@ public class EspdDocument {
         }
     }
 
+    @JsonIgnore
     public final boolean hasProcurementInformation() {
         return hasPublicationInformation() || hasProcurementProcedureInformation() || hasProcurerIdentity();
     }

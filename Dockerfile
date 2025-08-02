@@ -28,4 +28,7 @@ COPY --from=build /usr/src/app/espd-web/target/espd-web.war /usr/local/tomcat/we
 
 EXPOSE 8080
 
+# Set Spring profile for Docker/Production
+ENV SPRING_PROFILES_ACTIVE=docker
+
 CMD ["catalina.sh", "run"]

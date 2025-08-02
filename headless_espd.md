@@ -439,3 +439,18 @@ This headless service is designed to be integrated as described in the `gemini_i
 ---
 
 This guide provides the blueprint for transforming the ESPD-Service. By following these steps, an engineer can successfully create a decoupled, modern, and maintainable microservice ready for integration into the broader SaaS ecosystem.
+
+## NOTES FOR XML <-> JSON MAPPINGS
+
+  The rule is: When the main criterion answer is false, ALL follow-up questions should have null values, not false values. This will make the export generate empty <ccv:Response/> elements instead of explicit false indicators.
+
+ For criteria where answer: false (like corruption, fraud, etc.), change:
+  "corruption": {
+    "answer": false,
+    "selfCleaning": {
+      "answer": false,  // Should be null
+      "description": null
+    },
+    "selfCleaningAnswer": false,  // Should be null
+    // ... other fields should also be null
+  }

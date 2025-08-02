@@ -92,6 +92,10 @@
             <artifactId>joda-time</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-joda</artifactId>
+        </dependency>
+        <dependency>
             <groupId>ro.isdc.wro4j</groupId>
             <artifactId>wro4j-core</artifactId>
         </dependency>
@@ -276,7 +280,7 @@
                 </executions>
                 <configuration>
                     <wroFile>${basedir}/src/main/resources/wro.xml</wroFile>
-                    <extraConfigFile>${basedir}/src/main/resources/wro.properties</extraConfigFile>
+                    <extraConfigFile>${basedir}/src/main/resources/wro-build.properties</extraConfigFile>
                     <contextFolder>${basedir}/src/main/resources/META-INF/resources</contextFolder>
                     <cssDestinationFolder>${basedir}/src/main/webapp/static/bundle/</cssDestinationFolder>
                     <jsDestinationFolder>${basedir}/src/main/webapp/static/bundle/</jsDestinationFolder>

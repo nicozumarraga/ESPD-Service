@@ -212,13 +212,13 @@ class UblResponseRequirementTransformer extends UblRequirementTypeTemplate {
 				if (CollectionUtils.isEmpty(unboundedGroups)) {
 					return null;
 				}
-				
+
 				{// Workaround for subgroup indicator //////////////////
 					if("selfCleaningAnswer".equals(requirement.getEspdCriterionFields().get(position))) {
 						return (T) unboundedGroups.get(groupIndex).getSubIndicatorAnswer();
 					}
 				}///////////////////////////////////////////////////////
-				
+
 				return (T) PropertyUtils
 						.getProperty(unboundedGroups.get(groupIndex),
 								requirement.getEspdCriterionFields().get(position));

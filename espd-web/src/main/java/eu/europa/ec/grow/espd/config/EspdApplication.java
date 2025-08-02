@@ -26,6 +26,7 @@ package eu.europa.ec.grow.espd.config;
 
 import ac.simons.spring.boot.wro4j.Wro4jAutoConfiguration;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.joda.JodaModule;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -57,7 +58,9 @@ public class EspdApplication extends SpringBootServletInitializer implements Web
 
     @Bean
     ObjectMapper objectMapper() {
-        return new ObjectMapper();
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.registerModule(new JodaModule());
+        return mapper;
     }
 
     @Bean
